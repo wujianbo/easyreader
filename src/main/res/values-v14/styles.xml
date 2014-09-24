@@ -1,0 +1,9 @@
+<resources>
+  <style name="FBReader.Activity" parent="android:Theme.DeviceDefault">
+	</style>
+  <style name="FBReader.Dialog" parent="android:Theme.DeviceDefault.Dialog">
+	</style>
+    <style name="EasyReader.Activity" parent="android:Theme.DeviceDefault">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

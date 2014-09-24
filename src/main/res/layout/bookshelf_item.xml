@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2014 xiaosea <sea.xiao.android@gmail.com>
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ 02110-1301, USA.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+
+	<ImageView
+		android:id="@+id/shelf_image_left"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/bookshelf_layer_left" />
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_toLeftOf="@+id/shelf_image_right"
+		android:layout_toRightOf="@+id/shelf_image_left"
+		android:background="@drawable/bookshelf_layer_center"
+		android:orientation="horizontal"
+		android:baselineAligned="false" >
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_horizontal" >
+
+			<Button
+				android:id="@+id/button_1"
+				android:layout_width="80dip"
+				android:layout_height="110dip"
+				android:layout_marginTop="15dip"
+				android:gravity="top|center_horizontal"
+				android:paddingLeft="15dip"
+				android:paddingTop="15dip"
+				android:textColor="#FF6F3D1E"
+				android:maxLines="3"
+                android:textSize="14sp"
+				android:background="@drawable/book_cover_default" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_horizontal" >
+
+			<Button
+				android:id="@+id/button_2"
+				android:layout_width="80dip"
+				android:layout_height="110dip"
+				android:layout_marginTop="15dip"
+				android:gravity="top|center_horizontal"
+				android:paddingLeft="15dip"
+				android:paddingTop="15dip"
+				android:textColor="#FF6F3D1E"
+				android:maxLines="3"
+                android:textSize="14sp"
+				android:background="@drawable/book_cover_default" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_horizontal" >
+
+			<Button
+				android:id="@+id/button_3"
+				android:layout_width="80dip"
+				android:layout_height="110dip"
+				android:layout_marginTop="15dip"
+				android:gravity="top|center_horizontal"
+				android:paddingLeft="15dip"
+				android:paddingTop="15dip"
+				android:textColor="#FF6F3D1E"
+				android:maxLines="3"
+                android:textSize="14sp"
+				android:background="@drawable/book_cover_default" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<ImageView
+		android:id="@+id/shelf_image_right"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:background="@drawable/bookshelf_layer_right" />
+
+</RelativeLayout>

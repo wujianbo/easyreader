@@ -1,0 +1,3 @@
+<resources>
+    <style name="EasyReader.Activity" parent="@android:style/Theme.Holo.NoActionBar.TranslucentDecor" />
+</resources>
